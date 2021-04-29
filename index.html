@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/0e732128e7.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/Portfolio/styles.css">
+	<title>Kyle Moreau | Portfolio</title>
+</head>
+
+<!-- Make responsive (Mid screens) -->
+<!-- Title hover effects -->
+<!-- Skills overflow on small screens -->
+<!-- Make a mobile nav -->
+
+<body>
+
+	<main class="container">
+
+		<!-- Contact Widgit -->
+		<section class="social">
+			<ul class="social__list">
+				<li class="social__listItem" style="background-color: #2867b2">
+					<a href="https://www.linkedin.com/in/kyle-moreau-8ba56b15b/" target="_blank" class="social__link">
+						<i class="fab fa-linkedin-in"></i>
+						<span>LinkedIn</span>
+					</a>
+				</li>
+		
+				<li class="social__listItem" style="background-color: #333">
+					<a href="https://github.com/notkylemoreau98" target="_blank" class="social__link">
+						<i class="fab fa-github"></i>
+						<span>GitHub</span>
+					</a>
+				</li>
+		
+				<li class="social__listItem" style="background-color: #f13c20">
+					<a href="mailto: williamkylemoreau@gmail.com" target="_blank" class="social__link">
+						<i class="far fa-envelope"></i>
+						<span>Email</span>
+					</a>
+				</li>
+		
+				<li class="social__listItem" style="background-color: #565f69">
+					<a href="#" target="_blank" class="social__link">
+						<i class="far fa-file-alt"></i>
+						<span>Resume</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+
+
+		<!-- Landing Page -->
+		<section class="home" id="home">
+
+			<nav class="home__nav">
+				<img src="/Portfolio/Images/KM-Logo.png" alt="logo">
+
+				<div class="home__navLinks">
+					<a href="#projects">Projects</a>
+					<a href="#contact">Contact</a>
+				</div>
+
+				<div class="home__navBars">
+					<i class="fas fa-bars"></i>
+				</div>
+			</nav>
+
+			<div class="home__title">
+				<h1>Hi, I'm Kyle Moreau</h1>
+				<p>A Front-End Developer with a passion for turning ideas into reality.</p>
+				<button><a href="#projects" class="home__link" >View my work<i class="fas fa-arrow-right"></i></a></button>
+			</div>
+		</section>
+
+		
+		<!-- Projects Section -->
+		<section class="projects" id="projects">
+
+			<div class="projects__title">
+				<h2>Projects</h2>
+				<div class="underline"></div>
+			</div>
+
+			<div class="project" id="service-org">
+				<div class="project__description">
+					<h3>Partners in Health</h3>
+
+					<div class="project__technologyContainer">
+						<span class="project__technology">REACT</span>
+						<span class="project__technology">Firebase</span>
+						<span class="project__technology">Stripe</span>
+						<span class="project__technology">HTML5</span>
+						<span class="project__technology">CSS3</span>
+						<span class="project__technology">Responsive</span>
+					</div>
+
+					<p>
+						Inspired by a novel written about the work of the Partners in Health organization, I created a multi-page application that highlights the projects and aspirations of the organization. This website was built using React and makes use of React-router to ensure that pages load quickly on change. The website is fully responsive and includes a functional donation modal that is integrated with the Stripe payment API. There is also a contact page which utilizes form validation before pushing the contact information to a Firestore Database.
+					</p>
+				
+					<div class="project__buttonContainer">
+						<button class="project__viewDemoButton">View Demo</button>
+						<button class="project__sourceButton">
+							<a href="https://github.com/notkylemoreau98/service-org" target="_blank">
+								Source Code
+							</a>
+						</button>
+					</div>
+				</div>
+
+				<div class="project__preview" id="project__previewOne"></div>
+			</div>
+			
+		
+			<div class="project" id="e-shop">
+				<div class="project__preview" id="project__previewTwo"></div>
+
+				<div class="project__description" id="project__previewTwoDescription">
+					<h3>Urban Touch</h3>
+
+					<div class="project__technologyContainer">
+						<span class="project__technology">REACT</span>
+						<span class="project__technology">Firebase</span>
+						<span class="project__technology">Stripe</span>
+						<span class="project__technology">Axios</span>
+						<span class="project__technology">HTML5</span>
+						<span class="project__technology">CSS3</span>
+						<span class="project__technology">Responsive</span>
+					</div>
+
+					<p>
+						This e-Commerce prototype has been built from the ground up and features a fully functioning cart and payment system using the Stripe API. I utilized Google’s Firebase Technology to set up a user authentication system as well as a Firestore database that allows users to create an account and view their previous orders. The website is fully responsive and uses an original minimal design in order to make navigation of the website as simple as possible.
+					</p>
+
+					<div class="project__buttonContainer">
+						<button class="project__viewDemoButton">View Demo</button>
+						<button class="project__sourceButton">
+							<a href="https://github.com/notkylemoreau98/Urban-Touch-eCommerce-Store" target="_blank">
+								Source Code
+							</a>
+					</button>
+					</div>
+				</div>
+		</div>
+		
+			<div class="project" id="weather-app">
+				<div class="project__description">
+					<h3>Weather Application</h3>
+
+					<div class="project__technologyContainer">
+						<span class="project__technology">JavaScript</span>
+						<span class="project__technology">Responsive</span>
+						<span class="project__technology">API Fetch</span>
+						<span class="project__technology">HTML5</span>
+						<span class="project__technology">CSS3</span>
+					</div>
+
+					<p>
+						This application uses the OpenWeatherMap API to display global weather information to users. The user can input any city in the world into the search bar and the daily weather information as well as the five day forecast will be fetched and displayed to the user. This website is fully responsive and the weather icons in the forecast section will update as well to represent the type of weather expected for that day. This project is written in vanilla JavaScript and utilizes DOM manipulation techniques to update the visual display.
+					</p>
+					
+					<div class="project__buttonContainer">
+						<button class="project__viewDemoButton">View Demo</button>
+						<button class="project__sourceButton">
+							<a href="https://github.com/notkylemoreau98/Weather-Application" target="_blank">
+								Source Code
+							</a>
+						</button>
+					</div>
+				</div>
+
+				<div class="project__preview" id="project__previewThree"></div>
+			</div>
+		</section>
+
+		
+		<!-- Footer Contact Section -->
+		<section class="contact" id="contact">			
+			<div class="contact__heading">
+				<h2>Get in Touch</h2>
+				<div class="underline"></div>
+				<p>Want to known more? Contact me through any of the options below!</p>
+			</div>
+		
+			<div class="contact__icons">
+				<a href="mailto: williamkylemoreau@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/kyle-moreau-8ba56b15b/" target="_blank"><i
+						class="fab fa-linkedin-in"></i></a>
+				<a href="https://github.com/notkylemoreau98" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="#" target="_blank"><i class="far fa-file-alt"></i></a>
+			</div>
+
+			<div class="contact__copyright">© 2021 Kyle Moreau. All Rights Reserved.</div>
+			<div><a href="#home">To top</a></div>
+		</section>
+
+	</main>
+
+	<script src="/Portfolio/apps.js"></script>
+
+</body>
+</html>
