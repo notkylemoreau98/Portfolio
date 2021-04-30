@@ -36,14 +36,8 @@ h3 {
 /* General Styles */
 
 .container {
-  width: 100%;
+  width: 100vw;
   height: 100%;
-}
-
-@media (orientation: landscape) {
-  .container {
-    width: 100vw;
-  }
 }
 
 .underline {
@@ -283,6 +277,16 @@ h3 {
   }
 }
 
+@media (orientation: landscape) {
+  .home__title h1 {
+    font-size: 3rem;
+  }
+
+  .home__title p {
+    font-size: 1.5rem;
+  }
+}
+
 /* Projects */
 
 .projects {
@@ -449,6 +453,31 @@ h3 {
   #service-org,
   #weather-app {
     flex-direction: column-reverse;
+  }
+}
+
+@media (orientation: landscape) {
+  .project__description {
+    width: 90%;
+    height: fit-content;
+    margin-right: 0;
+    margin-top: -100px;
+    padding-bottom: 1rem;
+  }
+
+  .project__preview {
+    width: 95%;
+    height: 400px;
+  }
+
+  .project__buttonContainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #project__previewTwoDescription {
+    margin-left: 0;
   }
 }
 
