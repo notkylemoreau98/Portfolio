@@ -470,10 +470,9 @@ h3 {
     height: 400px;
   }
 
-  .project__buttonContainer {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  .project__viewDemoButton,
+  .project__sourceButton {
+    width: 6rem;
   }
 
   #project__previewTwoDescription {
