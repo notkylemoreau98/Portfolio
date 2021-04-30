@@ -40,6 +40,12 @@ h3 {
   height: 100%;
 }
 
+@media (orientation: landscape) {
+  .container {
+    width: 100vw;
+  }
+}
+
 .underline {
   background: var(--accent-color-1);
   width: 6rem;
@@ -113,10 +119,6 @@ h3 {
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 100vw;
-  }
-
   .social {
     display: none;
   }
