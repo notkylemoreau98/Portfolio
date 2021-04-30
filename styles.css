@@ -10,7 +10,6 @@
   --text-color: #f7f7f7;
 }
 
-/* May have to alter bc of lack of browser support */
 html {
   scroll-behavior: smooth;
 }
