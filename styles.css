@@ -118,6 +118,12 @@ h3 {
   }
 }
 
+@media (orientation: landscape) {
+  .social {
+    display: none;
+  }
+}
+
 /* Homepage */
 
 .home {
@@ -457,6 +463,10 @@ h3 {
 }
 
 @media (orientation: landscape) {
+  .project {
+    padding-top: 4rem;
+  }
+
   .project__description {
     width: 90%;
     height: fit-content;
@@ -472,7 +482,7 @@ h3 {
 
   .project__viewDemoButton,
   .project__sourceButton {
-    width: 6rem;
+    width: 8rem;
   }
 
   #project__previewTwoDescription {
