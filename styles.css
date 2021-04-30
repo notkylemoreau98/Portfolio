@@ -389,12 +389,12 @@ h3 {
 /* Inidvidual Project Selectors */
 
 #project__previewOne {
-  background: url("/Portfolio/Images/PartnersinHealthScreenshot.png") no-repeat
+  background: url("/Images/PartnersinHealthScreenshot.png") no-repeat
     center/cover;
 }
 
 #project__previewTwo {
-  background: url("/Portfolio/Images/UrbanTouchScreeshot.png") no-repeat
+  background: url("/Images/UrbanTouchScreeshot.png") no-repeat
     left/cover;
 }
 
@@ -404,7 +404,7 @@ h3 {
 }
 
 #project__previewThree {
-  background: url("/Portfolio/Images/portfolioImageSelf.jpg") no-repeat
+  background: url("/Images/WeatherForecast.png") no-repeat
     center/cover;
 }
 
