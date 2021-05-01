@@ -317,6 +317,7 @@ h3 {
 
   .home__title {
     padding-top: 4rem;
+    height: 100%;
   }
 
   .home__title h1 {
