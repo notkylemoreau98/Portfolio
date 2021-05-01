@@ -177,6 +177,7 @@ h3 {
 .home__navMobile {
   display: flex;
   justify-content: center;
+  text-align: center;
   position: absolute;
   top: 0;
   left: 0;
@@ -207,6 +208,10 @@ h3 {
 
 /* Homepage: Content */
 .home__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   animation: textFade 3s;
   position: relative;
