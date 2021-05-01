@@ -321,11 +321,12 @@ h3 {
   }
 
   .home__title h1 {
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
 
   .home__title p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
+    margin: 1rem 0;
   }
 }
 
