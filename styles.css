@@ -321,11 +321,11 @@ h3 {
   }
 
   .home__title h1 {
-    font-size: 3.5rem;
+    font-size: 3.75rem;
   }
 
   .home__title p {
-    font-size: 1.75rem;
+    font-size: 2rem;
     margin: 1rem 0;
   }
 }
@@ -485,6 +485,7 @@ h3 {
   .project__technology {
     margin: 0 2px 2px 2px;
     font-size: 0.75rem;
+    text-align: center;
   }
 }
 
@@ -639,7 +640,7 @@ h3 {
   }
 
   .contact i {
-    font-size: 2.75rem;
+    font-size: 3rem;
     padding: 10px;
   }
 
