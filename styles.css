@@ -342,6 +342,10 @@ h3 {
   .home__title p {
     font-size: 1.5rem;
   }
+
+  .home__title button {
+    margin-top: 1.5rem;
+  }
 }
 
 /* Projects */
