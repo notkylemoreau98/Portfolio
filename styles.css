@@ -19,10 +19,11 @@ body {
   padding: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 5.75rem;
 }
 
 h2 {
@@ -31,12 +32,6 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-}
-
-@media (max-width: 768px) and (orientation: landscape) {
-  body {
-    width: 100vw;
-  }
 }
 
 /* General Styles */
@@ -118,7 +113,7 @@ h3 {
   line-height: 50px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .social {
     display: none;
   }
@@ -171,28 +166,65 @@ h3 {
 }
 
 .home__navBars {
+  cursor: pointer;
   font-size: 2rem;
   display: none;
   position: absolute;
-  top: 0.75rem;
+  top: 0rem;
   right: 1rem;
+}
+
+.home__navMobile {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw;
+  background: #23212a;
+  transform: translateX(100%);
+  transition: all 0.3s;
+  z-index: 100;
+}
+
+.home__navMobile ul {
+  list-style: none;
+  text-align: center;
+}
+
+.home__navMobile li {
+  margin: 2.5rem 0;
+}
+
+.home__navMobile a {
+  text-decoration: none;
+  color: #f7f7f7;
+  font-size: 3.5rem;
 }
 
 /* Homepage: Content */
 .home__title {
   text-align: center;
   animation: textFade 3s;
+  position: relative;
+  bottom: 2rem;
+  z-index: 1;
 }
 
 .home__title h1 {
   margin-bottom: 0;
   text-align: center;
+  font-family: "Catamaran", sans-serif;
 }
 
 .home__title p {
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: 600;
   padding: 0 3rem;
+  margin-top: 0;
 }
 
 .home__title > button {
@@ -245,21 +277,23 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .home {
-    height: 70vh;
+    height: 75vh;
   }
 
   .home__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    height: 4rem;
+    position: fixed;
     top: 0;
-    left: 1rem;
-    right: 1rem;
+    left: 0;
+    right: 0;
     background: #23212a;
     padding: 0 1.5rem;
+    z-index: 10;
   }
 
   .home__nav > img {
@@ -273,29 +307,33 @@ h3 {
 
   .home__navBars {
     display: flex;
-    position: static;
+    position: relative;
+  }
+
+  .home__title {
+    padding-top: 4rem;
   }
 
   .home__title h1 {
-    font-size: 3rem;
+    font-size: 3.25rem;
   }
 
   .home__title p {
     font-size: 1.5rem;
-  }
-
-  .home__contactIcons {
-    display: flex;
   }
 }
 
-@media (max-width: 768px) and (orientation: landscape) {
+@media screen and (max-width: 415px) {
+  .home__title {
+    padding: 0 1rem;
+  }
+
   .home__title h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .home__title p {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -427,13 +465,23 @@ h3 {
 }
 
 /*  */
-@media (max-width: 900px) {
+@media screen and (max-width: 900px) {
   .projects {
     padding: 0;
   }
+
+  .project__technologyContainer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .project__technology {
+    margin: 0 2px 2px 2px;
+    font-size: 0.75rem;
+  }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .projects {
     padding: 0 1.5rem 2rem 1.5rem;
   }
@@ -446,12 +494,7 @@ h3 {
   }
 
   .project__technologyContainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .project__technology {
-    margin: 0 0.5rem;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .project__description {
@@ -528,11 +571,11 @@ h3 {
 /* Contact */
 
 .contact {
-  height: 325px;
+  height: 375px;
   padding: 2rem 2rem 3rem 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background: #23212a;
   color: var(--text-color);
@@ -569,17 +612,17 @@ h3 {
 
 .contact__heading p {
   font-size: 1.25rem;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .contact__copyright {
-  padding-top: 1.25rem;
+  padding-top: 2rem;
 }
 
-@media (max-wdith: 900px) {
+@media screen and (max-width: 900px) {
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .contact {
     padding: 0 1rem;
   }
@@ -589,7 +632,8 @@ h3 {
   }
 
   .contact i {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    padding: 10px;
   }
 
   .contact__heading h2 {
