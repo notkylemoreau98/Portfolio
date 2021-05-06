@@ -12,8 +12,3 @@ function closeNav(e) {
 
 burgerMenu.addEventListener('click', openNav);
 mobileLinks.forEach(mobileLink => mobileLink.addEventListener('click', closeNav));
-
-window.addEventListener('keypress', (e) => {
-	let key = e.keyCode
-	key == 27 ? closeNav() : '';
-})
