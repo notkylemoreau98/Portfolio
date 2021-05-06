@@ -133,6 +133,10 @@ h3 {
   color: var(--text-color);
 }
 
+.home img {
+  cursor: pointer;
+}
+
 /* Homepage: Navigation */
 .home__nav {
   height: 5rem;
