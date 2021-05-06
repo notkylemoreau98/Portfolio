@@ -7,8 +7,13 @@ function openNav(e) {
 }
 
 function closeNav(e) {
-	mobileNav.style.transform = "translateX(100%)";
+	mobileNav.style.transform = "translateX(-100%)";
 }
 
 burgerMenu.addEventListener('click', openNav);
 mobileLinks.forEach(mobileLink => mobileLink.addEventListener('click', closeNav));
+
+window.addEventListener('keypress', (e) => {
+	let key = e.keyCode
+	key == 27 ? closeNav() : '';
+})
