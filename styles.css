@@ -133,17 +133,14 @@ h3 {
   color: var(--text-color);
 }
 
-.home img {
-  cursor: pointer;
-}
-
 /* Homepage: Navigation */
 .home__nav {
   height: 5rem;
   padding: 1rem 4rem;
 }
 
-.home__nav > img {
+.home__nav img {
+  cursor: pointer;
   height: 4rem;
   position: absolute;
   left: 2rem;
