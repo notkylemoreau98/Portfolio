@@ -281,6 +281,12 @@ h3 {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .home__title {
+    padding-bottom: 4rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .home {
     height: 70vh;
@@ -316,6 +322,7 @@ h3 {
 
   .home__title {
     padding-top: 4rem;
+    padding-bottom: 0;
     height: 100%;
   }
 
