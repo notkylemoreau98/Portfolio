@@ -147,6 +147,10 @@ h3 {
   top: 0.75rem;
 }
 
+.home__logoLink {
+  padding: 0;
+}
+
 .home__navLinks {
   position: absolute;
   top: 2rem;
