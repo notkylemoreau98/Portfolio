@@ -284,7 +284,7 @@ h3 {
 @media screen and (max-width: 900px) {
   .home__title {
     padding-bottom: 4rem;
-    height: (70vh - 5rem);
+    height: calc(70vh - 5rem);
   }
 }
 
