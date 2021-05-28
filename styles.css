@@ -34,10 +34,6 @@ h3 {
   font-size: 1.5rem;
 }
 
-img {
-  object-fit: fill;
-}
-
 /* General Styles */
 
 .container {
@@ -437,6 +433,7 @@ img {
 .project__buttonContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .project__viewDemoButton,
