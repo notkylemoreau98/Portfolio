@@ -3,12 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://kit.fontawesome.com/0e732128e7.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles.css">
 	<title>Kyle Moreau | Portfolio</title>
+
+	<meta 
+		name="description" 
+		content="Kyle Moreau is a Front-End Software Developer specializing in JavaScript and React technologies."
+		>
+		<meta 
+			name="keywords" 
+			content="Kyle Moreau, Portfolio, Projects, Work, Front-End, Developer, Software, Javascript, Web Development"
+		>
 </head>
 
 <body>
@@ -19,28 +29,48 @@
 		<section class="social">
 			<ul class="social__list">
 				<li class="social__listItem" style="background-color: #2867b2">
-					<a href="https://www.linkedin.com/in/kyle-moreau-8ba56b15b/" target="_blank" class="social__link">
+					<a 
+						href="https://www.linkedin.com/in/kyle-moreau-8ba56b15b/" 
+						target="_blank" 
+						class="social__link" 
+						title="LinkedIn"
+						>
 						<i class="fab fa-linkedin-in"></i>
 						<span>LinkedIn</span>
 					</a>
 				</li>
 		
 				<li class="social__listItem" style="background-color: #333">
-					<a href="https://github.com/notkylemoreau98" target="_blank" class="social__link">
+					<a 
+						href="https://github.com/notkylemoreau98" 
+						target="_blank" 
+						class="social__link" 
+						title="Github"
+						>
 						<i class="fab fa-github"></i>
 						<span>GitHub</span>
 					</a>
 				</li>
 		
 				<li class="social__listItem" style="background-color: #f13c20">
-					<a href="mailto: williamkylemoreau@gmail.com" target="_blank" class="social__link">
+					<a 
+						href="mailto: williamkylemoreau@gmail.com" 
+						target="_blank" 
+						class="social__link" 
+						title="Email"
+					>
 						<i class="far fa-envelope"></i>
 						<span>Email</span>
 					</a>
 				</li>
 		
 				<li class="social__listItem" style="background-color: #565f69">
-					<a href="./Images/KyleMoreauResume6.14.pdf" target="_blank" class="social__link">
+					<a 
+						href="./Images/KyleMoreauResumeJune14.pdf" 
+						target="_blank" 
+						class="social__link" 
+						title="Resume"
+					>
 						<i class="far fa-file-alt"></i>
 						<span>Resume</span>
 					</a>
@@ -53,11 +83,11 @@
 		<section class="home" id="home">
 
 			<nav class="home__nav">
-				<a href="#home"><img src="/Images/KM-Logo.png" alt="logo"></a>
+				<a href="#home" title="Home"><img src="/Images/KM-Logo.png" alt="logo"></a>
 
 				<div class="home__navLinks">
-					<a href="#projects">Projects</a>
-					<a href="#contact">Contact</a>
+					<a href="#projects" title="Projects">Projects</a>
+					<a href="#contact" title="Contact">Contact</a>
 				</div>
 
 				<div class="home__navBars">
@@ -66,9 +96,9 @@
 
 				<div class="home__navMobile">
 					<ul>
-						<li><a href="#home" class="nav__mobileLink">Home</a></li>
-						<li><a href="#projects" class="nav__mobileLink">Projects</a></li>
-						<li><a href="#contact" class="nav__mobileLink">Contact</a></li>
+						<li><a href="#home" class="nav__mobileLink" title="Home">Home</a></li>
+						<li><a href="#projects" class="nav__mobileLink" title="Projects">Projects</a></li>
+						<li><a href="#contact" class="nav__mobileLink" title="Contact">Contact</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -76,7 +106,11 @@
 			<div class="home__title">
 				<h1>Hi, I'm Kyle Moreau</h1>
 				<p>A Front-End Developer with a passion for turning ideas into reality.</p>
-				<button><a href="#projects" class="home__link" >View my work<i class="fas fa-arrow-right"></i></a></button>
+				<button>
+					<a href="#projects" class="home__link" title="Project">
+						View my work<i class="fas fa-arrow-right"></i>
+					</a>
+			</button>
 			</div>
 		</section>
 
@@ -109,13 +143,13 @@
 				
 					<div class="project__buttonContainer">
 					<button class="project__viewDemoButton">
-						<a href="https://service-org.firebaseapp.com/" target="_blank">
+						<a href="https://service-org.firebaseapp.com/" target="_blank" title="Service-Org">
 							View Demo
 						</a>
 					</button>
 
 						<button class="project__sourceButton">
-							<a href="https://github.com/notkylemoreau98/service-org" target="_blank">
+							<a href="https://github.com/notkylemoreau98/service-org" target="_blank" title="Service Code">
 								Source Code
 							</a>
 						</button>
@@ -148,13 +182,13 @@
 
 					<div class="project__buttonContainer">
 						<button class="project__viewDemoButton">
-							<a href="https://urbantouchapparel.com/" target="_blank">
+							<a href="https://urbantouchapparel.com/" target="_blank" title="Urban Touch">
 								View Demo
 							</a>
 						</button>
 
 						<button class="project__sourceButton">
-							<a href="https://github.com/notkylemoreau98/Urban-Touch-eCommerce-Store" target="_blank">
+							<a href="https://github.com/notkylemoreau98/Urban-Touch-eCommerce-Store" target="_blank" title="Urban Code">
 								Source Code
 							</a>
 					</button>
@@ -181,13 +215,13 @@
 					
 					<div class="project__buttonContainer">
 						<button class="project__viewDemoButton">
-							<a href="https://findmyforecast.com" target="_blank">
+							<a href="https://findmyforecast.com" target="_blank" title="Forecast">
 								View Demo
 							</a>
 						</button>
 					
 						<button class="project__sourceButton">
-							<a href="https://github.com/notkylemoreau98/Weather-Application" target="_blank">
+							<a href="https://github.com/notkylemoreau98/Weather-Application" target="_blank" title="Forecast Code">
 								Source Code
 							</a>
 						</button>
@@ -209,15 +243,15 @@
 			</div>
 		
 			<div class="contact__icons">
-				<a href="mailto: williamkylemoreau@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-				<a href="https://www.linkedin.com/in/kyle-moreau-8ba56b15b/" target="_blank"><i
+				<a href="mailto: williamkylemoreau@gmail.com" target="_blank" title="Email"><i class="far fa-envelope"></i></a>
+				<a href="https://www.linkedin.com/in/kyle-moreau-8ba56b15b/" target="_blank" title="LinkedIn"><i
 						class="fab fa-linkedin-in"></i></a>
-				<a href="https://github.com/notkylemoreau98" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="./Images/KyleMoreauResume.pdf" target="_blank"><i class="far fa-file-alt"></i></a>
+				<a href="https://github.com/notkylemoreau98" target="_blank" title="Github"><i class="fab fa-github"></i></a>
+				<a href="./Images/KyleMoreauResume.pdf" target="_blank" title="Resume"><i class="far fa-file-alt"></i></a>
 			</div>
 
 			<div class="contact__copyright">© 2021 Kyle Moreau. All Rights Reserved.</div>
-			<div><a href="#home">To top</a></div>
+			<div><a href="#home" title="Home">To top</a></div>
 		</section>
 
 	</main>
